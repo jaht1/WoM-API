@@ -24,3 +24,9 @@ Content-Type: application/json
 {
     "name": "Cleaning"
 }
+
+
+###Radera tjänst
+
+DELETE {{baseURL}}/services/63442fb678daa862c22d250e
+Content-Type: application/json

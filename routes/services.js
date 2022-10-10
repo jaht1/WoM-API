@@ -56,4 +56,24 @@ router.patch('/:id', async (req, res) => {
 
 })
 
+//Radera tjänst
+router.delete('/:id', async (req, res) => {
+
+    try {
+        const service = await Service.findOneAndDelete({ 
+            _id: req.params.id, })
+
+        
+        if (!service) {
+            return res.status(404).send({ msg: "Service not found." })
+        }
+        else { return res.send({ msg: "Service deleted." }) }
+
+
+    }
+    catch (error) {
+        res.status(500).send({ msg: error.message })
+    }
+})
+
 module.exports = router
