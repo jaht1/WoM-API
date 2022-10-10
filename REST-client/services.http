@@ -3,16 +3,24 @@
 ### Upload tjänster
 
 POST {{baseURL}}/services/upload
-
 Content-Type: application/json
-//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MzM2ZWIyYTliOTkzZTg1M2IxMzdjYTIiLCJlbWFpbCI6InNhbGVAYXJjYWRhIiwiaWF0IjoxNjY1NDA5ODgwLCJleHAiOjE2NjU0OTYyODB9.j8GN4KHOfLFbzqyx7Xl5mp0aXrxwwJqoIF1iLT2967U
+
 {
-    "service": "Lawn mowing"
+    "name": "Window washing"
 }
 
 
 ### Hämta alla tjänster
 
 GET {{baseURL}}/services
-
 Content-Type: application/json
+
+
+### Modifiera tjänst
+
+PATCH {{baseURL}}/services/63442fb678daa862c22d250e
+Content-Type: application/json
+
+{
+    "name": "Cleaning"
+}
