@@ -8,11 +8,11 @@ const orderSchema = new mongoose.Schema({
     date: {
         type: Date,
         required: true
-    },
+    } /*,
     cabin: {
         type: String,
         required: true
-    }
+    }*/
     
 }, {timestamps: true})
 

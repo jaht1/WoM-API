@@ -6,7 +6,7 @@ POST {{baseURL}}/services/upload
 Content-Type: application/json
 
 {
-    "name": "Window washing"
+    "name": "Cleaning"
 }
 
 

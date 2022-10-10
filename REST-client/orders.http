@@ -1,1 +1,30 @@
 @baseURL = http://localhost:3031
+
+### hämta alla 
+GET {{baseURL}}/orders
+Content-Type: application/json
+
+
+
+### Skapa en ny
+POST {{baseURL}}/orders/634435fad10640621de0226d
+Content-Type: application/json
+
+{
+   "date": "2022-09-27"
+}
+
+
+###Modifiera beställning
+
+PATCH {{baseURL}}/orders/6344366f95d03bad64c7de6f
+Content-Type: application/json
+
+{
+    "date": "2022-09-28"
+}
+
+
+### Radera 
+DELETE {{baseURL}}/orders/6344366f95d03bad64c7de6f
+Content-Type: application/json
