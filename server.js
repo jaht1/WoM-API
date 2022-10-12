@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3031
 app.use(express.json())
 
 
-app.get('/', (req, res) => res.json("Det funkar!"))
+app.get('/', (req, res) => res.json("API 2 Funkar"))
 
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}`))
 
@@ -29,4 +29,7 @@ app.use('/services', servicesRouter)
 
 const ordersRouter = require('./routes/orders')
 app.use('/orders', ordersRouter)
+
+
+
 
